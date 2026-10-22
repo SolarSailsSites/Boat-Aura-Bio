@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Boat Aura Bio</title>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 256x144 Downscaled Hardware Engine Canvas -->
+    <canvas id="sunsetCanvas" title="Click anywhere to hide/show bio card"></canvas>
+
+    <!-- Interactive Bio Card Overlay -->
+    <div class="viewport-overlay" id="overlay">
+        <div class="profile-card">
+
+            <!-- ========================================================================= -->
+            <!-- ✏️ CLIENT CUSTOMIZATION: HEADER & AVATAR                                   -->
+            <!-- ========================================================================= -->
+            <div class="card-header">
+                <div class="avatar-frame">
+                    <!-- CHANGE AVATAR IMAGE URL HERE -->
+                    <img src="https://i.imgur.com/AjQmX1q.jpeg" alt="Avatar">
+                    <div class="online-status"></div>
+                </div>
+                <!-- CHANGE DISPLAY NAME HERE -->
+                <div class="username">Boatboi</div>
+                <!-- CHANGE TAGLINE / STATUS HERE -->
+                <div class="tagline">Im so back!!!</div>
+            </div>
+
+            <div class="card-scroll-body">
+
+                <!-- ========================================================================= -->
+                <!-- ✏️ CLIENT CUSTOMIZATION: ABOUT SECTION                                    -->
+                <!-- ========================================================================= -->
+                <div>
+                    <div class="section-title">About Me</div>
+                    <!-- CHANGE BIO DESCRIPTION HERE -->
+                    <div class="bio-text">
+                        If you are looking at this, congratulations! You wasted your time, I got nothing to say here, thats a few minutes of your life you're never getting back.
+                    </div>
+                </div>
+
+                <!-- ========================================================================= -->
+                <!-- ✏️ CLIENT CUSTOMIZATION: LINKS & SOCIALS                                  -->
+                <!-- ========================================================================= -->
+                <div>
+                    <div class="section-title">Links & Socials</div>
+                    <div class="links-container">
+                        <!-- LINK 1 -->
+                        <a href="https://discordapp.com/users/620554663598620702" class="bio-link" target="_blank">
+                            <span>🎮 Discord Profile</span>
+                            <span>→</span>
+                        </a>
+                        <!-- LINK 2 -->
+                        <a href="https://github.com/SolarSailsSites/" class="bio-link" target="_blank">
+                            <span>🗂️ GitHub Repositories</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ========================================================================= -->
+                <!-- ✏️ CLIENT CUSTOMIZATION: ADDITIONAL INFO                                  -->
+                <!-- ========================================================================= -->
+                <div>
+                    <div class="section-title">Additional Info</div>
+                    <!-- CHANGE TECH BADGES / LIST HERE -->
+                    <div class="bio-text" style="font-family: monospace; font-size: 0.8rem; color: #ffffff;">
+                        Currently in college call me boat, wouldn't be here without my amazing friends, my day 1s, my goats!!
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Hint -->
+    <div class="toggle-hint" id="hint">Click background to toggle view focus</div>
+
+    <!-- External Script File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
